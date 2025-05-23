@@ -74,3 +74,17 @@ Para ejecutar la aplicación:
 ## 🤝 Contribuciones
 
 Este proyecto está diseñado para fines educativos y como base para desarrollos profesionales. Sentite libre de adaptarlo y reutilizarlo en tus propios proyectos.
+
+---
+
+## 🧪 Comandos útiles
+
+```bash
+./gradlew build
+./gradlew test
+./gradlew jacocoTestReport
+./gradlew testCoverage
+./gradlew :application:test
+./gradlew dependencies
+./gradlew projects
+```

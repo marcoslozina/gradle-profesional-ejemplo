@@ -1,11 +1,11 @@
 plugins {
-    `java-library`
+    `kotlin-dsl`
 }
 
-java {
-    toolchain.languageVersion.set(
-        providers
-            .gradleProperty("javaVersion")
-            .map { JavaLanguageVersion.of(it.toInt()) }
-    )
+kotlinDslPluginOptions {
+    experimentalWarning.set(false)
+}
+
+repositories {
+    mavenCentral()
 }
