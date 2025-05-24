@@ -16,3 +16,7 @@ tasks.jacocoTestReport {
         html.required.set(true)
     }
 }
+
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+}
