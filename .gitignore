@@ -2,7 +2,6 @@
 .gradle/
 build/
 **/build/
-!gradle/wrapper/gradle-wrapper.jar
 
 # === IntelliJ IDEA ===
 .idea/
@@ -34,7 +33,6 @@ out/
 **/build/reports/
 **/build/test-results/
 **/build/generated/
-**/build/tmp/
 **/build/out/
 
 # === Cobertura / Test / Análisis ===
@@ -59,11 +57,9 @@ Thumbs.db
 *.bin
 .cache/
 
-# === Build y binarios ===
-**/build/
-**/build/libs/
-**/.gradle/
-*.jar
-*.class
-*.bin
-*.lock
+# === Gradle Wrapper (necesario para CI/CD) ===
+!gradle/wrapper/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+!gradlew
+!gradlew.bat
